@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 217 19% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 13% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 13% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 174 72% 47%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-glow: 174 72% 60%;
+
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 16% 47%;
+    --muted-foreground: 217 11% 65%;
+
+    --accent: 31 100% 51%;
+    --accent-foreground: 0 0% 100%;
+    
+    --accent-glow: 31 100% 60%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 19% 18%;
+    --input: 217 19% 18%;
+    --ring: 174 72% 47%;
+
+    --radius: 0.875rem;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(174 72% 47%), hsl(174 72% 35%));
+    --gradient-accent: linear-gradient(135deg, hsl(31 100% 51%), hsl(174 72% 47%));
+    --shadow-glow: 0 0 60px hsl(174 72% 47% / 0.15);
+    --shadow-accent-glow: 0 0 60px hsl(31 100% 51% / 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 217 19% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 13% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 13% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 174 72% 47%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-glow: 174 72% 60%;
+
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 16% 47%;
+    --muted-foreground: 217 11% 65%;
+
+    --accent: 31 100% 51%;
+    --accent-foreground: 0 0% 100%;
+    
+    --accent-glow: 31 100% 60%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 19% 18%;
+    --input: 217 19% 18%;
+    --ring: 174 72% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
