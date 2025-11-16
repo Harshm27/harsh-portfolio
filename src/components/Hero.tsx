@@ -36,7 +36,7 @@ const Hero = () => {
 
             <div className="flex flex-wrap gap-4 pt-4">
               <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 hover:scale-105" asChild>
-                <a href="/cv.pdf" download="Harsh_Malhotra_CV.pdf">
+                <a href={`${import.meta.env.BASE_URL}cv.pdf`} download="Harsh_Malhotra_CV.pdf">
                   <Download className="mr-2 h-5 w-5" />
                   View CV
                 </a>
