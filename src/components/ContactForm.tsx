@@ -3,8 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, Github } from "lucide-react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactForm = () => {
+  const [state, handleSubmit] = useForm("xeovrprz");
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   return (
@@ -50,10 +52,9 @@ const ContactForm = () => {
             </Button>
           </div>
 
-          {/* Simple HTML form that posts directly to Formspree */}
+          {/* Formspree-powered form */}
           <form
-            action="https://formspree.io/f/xeovrprz"
-            method="POST"
+            onSubmit={handleSubmit}
             className="space-y-4"
           >
             <div>
@@ -76,6 +77,7 @@ const ContactForm = () => {
                 required
                 className="bg-background"
               />
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
             </div>
             <div>
               <Textarea
@@ -87,11 +89,14 @@ const ContactForm = () => {
                 rows={5}
                 className="bg-background resize-none"
               />
+              <ValidationError prefix="Message" field="message" errors={state.errors} />
             </div>
-            {/* Honeypot field (for bots) */}
-            <input type="text" name="website" className="hidden" tabIndex={-1} autoComplete="off" />
-            <Button type="submit" className="w-full bg-gradient-primary hover:shadow-glow">
-              Send Message
+            <Button
+              type="submit"
+              className="w-full bg-gradient-primary hover:shadow-glow"
+              disabled={state.submitting}
+            >
+              {state.submitting ? "Sending..." : state.succeeded ? "Sent!" : "Send Message"}
             </Button>
           </form>
         </div>
