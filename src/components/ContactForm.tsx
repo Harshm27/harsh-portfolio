@@ -2,29 +2,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import { Mail, Linkedin, Github } from "lucide-react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    toast({
-      title: "Message sent!",
-      description: "Thanks — I'll reply within 48 hours.",
-    });
-
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
-  };
 
   return (
     <section id="contact" className="py-20 px-6 bg-card">
@@ -69,9 +50,15 @@ const ContactForm = () => {
             </Button>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Simple HTML form that posts directly to Formspree */}
+          <form
+            action="https://formspree.io/f/xeovrprz"
+            method="POST"
+            className="space-y-4"
+          >
             <div>
               <Input
+                name="name"
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -81,6 +68,7 @@ const ContactForm = () => {
             </div>
             <div>
               <Input
+                name="email"
                 type="email"
                 placeholder="Your Email"
                 value={formData.email}
@@ -91,6 +79,7 @@ const ContactForm = () => {
             </div>
             <div>
               <Textarea
+                name="message"
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -99,10 +88,10 @@ const ContactForm = () => {
                 className="bg-background resize-none"
               />
             </div>
-            {/* Honeypot field */}
-            <input type="text" name="website" className="hidden" tabIndex={-1} />
-            <Button type="submit" className="w-full bg-gradient-primary hover:shadow-glow" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Send Message"}
+            {/* Honeypot field (for bots) */}
+            <input type="text" name="website" className="hidden" tabIndex={-1} autoComplete="off" />
+            <Button type="submit" className="w-full bg-gradient-primary hover:shadow-glow">
+              Send Message
             </Button>
           </form>
         </div>
