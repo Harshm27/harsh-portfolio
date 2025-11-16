@@ -69,11 +69,11 @@ const ContactForm = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-4">
             <Button variant="outline" className="w-full justify-start gap-3 h-auto py-4" asChild>
-              <a href="mailto:harsh.malhotra24@imperial.ac.uk">
+              <a href="mailto:harshmalhotra1@gmail.com">
                 <Mail className="h-5 w-5 text-primary" />
                 <span className="text-left">
                   <div className="font-semibold">Email</div>
-                  <div className="text-sm text-muted-foreground">harsh.malhotra24@imperial.ac.uk</div>
+                  <div className="text-sm text-muted-foreground">harshmalhotra1@gmail.com</div>
                 </span>
               </a>
             </Button>
@@ -89,11 +89,11 @@ const ContactForm = () => {
             </Button>
 
             <Button variant="outline" className="w-full justify-start gap-3 h-auto py-4" asChild>
-              <a href="https://github.com/harshmalhotra" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/harshm27" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5 text-primary" />
                 <span className="text-left">
                   <div className="font-semibold">GitHub</div>
-                  <div className="text-sm text-muted-foreground">github.com/harshmalhotra</div>
+                  <div className="text-sm text-muted-foreground">github.com/harshm27</div>
                 </span>
               </a>
             </Button>
