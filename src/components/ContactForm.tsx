@@ -2,12 +2,59 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
 import { Mail, Linkedin, Github } from "lucide-react";
-import { useForm, ValidationError } from "@formspree/react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("xeovrprz");
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      // EmailJS credentials from environment variables
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || "";
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "";
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "";
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error("EmailJS credentials not configured. Please set environment variables.");
+      }
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_name: "Harsh Malhotra",
+        },
+        publicKey
+      );
+
+      toast({
+        title: "Message sent!",
+        description: "Thanks for reaching out. I'll get back to you within 48 hours.",
+      });
+
+      // Clear form
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      toast({
+        title: "Failed to send message",
+        description: "Something went wrong. Please try again or email me directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section id="contact" className="py-20 px-6 bg-card">
@@ -52,14 +99,10 @@ const ContactForm = () => {
             </Button>
           </div>
 
-          {/* Formspree-powered form */}
-          <form
-            onSubmit={handleSubmit}
-            className="space-y-4"
-          >
+          {/* EmailJS-powered form */}
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <Input
-                name="name"
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -69,7 +112,6 @@ const ContactForm = () => {
             </div>
             <div>
               <Input
-                name="email"
                 type="email"
                 placeholder="Your Email"
                 value={formData.email}
@@ -77,11 +119,9 @@ const ContactForm = () => {
                 required
                 className="bg-background"
               />
-              <ValidationError prefix="Email" field="email" errors={state.errors} />
             </div>
             <div>
               <Textarea
-                name="message"
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -89,14 +129,13 @@ const ContactForm = () => {
                 rows={5}
                 className="bg-background resize-none"
               />
-              <ValidationError prefix="Message" field="message" errors={state.errors} />
             </div>
             <Button
               type="submit"
               className="w-full bg-gradient-primary hover:shadow-glow"
-              disabled={state.submitting}
+              disabled={isSubmitting}
             >
-              {state.submitting ? "Sending..." : state.succeeded ? "Sent!" : "Send Message"}
+              {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
           </form>
         </div>
