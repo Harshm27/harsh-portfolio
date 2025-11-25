@@ -27,7 +27,6 @@ const featuredProjects: Array<{
     results:
       "Enables businesses to analyze shipment data efficiently, compare carrier costs, and optimize logistics operations with visual analytics and route visualization.",
     tech_tags: ["React", "TypeScript", "Node.js", "Full-Stack"],
-    github: "https://github.com/Harshm27/logistics-analytics-dashboard",
     demo: "https://shipment-dashboard-v2.vercel.app",
   },
   {
