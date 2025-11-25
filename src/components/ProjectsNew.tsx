@@ -17,17 +17,18 @@ const featuredProjects: Array<{
   demoLabel?: string;
 }> = [
   {
-    title: "Shipment Operations Dashboard",
-    subtitle: "Logistics · Full-Stack · API Integration",
+    title: "Logistics Analytics Dashboard",
+    subtitle: "Logistics · Full-Stack · Analytics",
     description:
-      "Comprehensive logistics management system streamlining shipping operations for businesses handling multiple deliveries.",
+      "Full-stack web application for analyzing shipment data with route visualization, rate comparison, and analytics. Built with React, TypeScript, and Node.js.",
     overview:
-      "A comprehensive logistics management system designed to streamline shipping operations for businesses handling multiple deliveries. Features bulk data processing via Excel import with intelligent format validation, real-time shipping rate comparison across major carriers (DHL, FedEx, UPS, Royal Mail), interactive map visualization with geocoding and marker clustering, analytics dashboard with Chart.js for shipment insights, and support for domestic and international shipping to 30+ countries.",
-    tech: "Vanilla JavaScript, Leaflet.js, Chart.js, SheetJS, Node.js, Express, RESTful API, ParcelMonkey API integration, country-specific validation, E.164 phone formatting",
+      "Full-stack web application for analyzing shipment data with route visualization, rate comparison, and analytics. Built with React, TypeScript, and Node.js. Features interactive map visualization, real-time shipping rate comparison across major carriers, and comprehensive analytics dashboard for shipment insights.",
+    tech: "React, TypeScript, Node.js, Express, RESTful API, Leaflet.js, Chart.js, data visualization",
     results:
-      "Enables businesses to process hundreds of shipments efficiently, compare carrier costs instantly, and optimize logistics operations with visual analytics. Includes intelligent format validation, fallback logic and error handling, and dynamic postcode generation.",
-    tech_tags: ["RESTful", "Node.js", "Full-Stack"],
-    demo: "https://harshm27.github.io/shipment-operations-dashboard/",
+      "Enables businesses to analyze shipment data efficiently, compare carrier costs, and optimize logistics operations with visual analytics and route visualization.",
+    tech_tags: ["React", "TypeScript", "Node.js", "Full-Stack"],
+    github: "https://github.com/Harshm27/logistics-analytics-dashboard",
+    demo: "https://shipment-dashboard-v2.vercel.app",
   },
   {
     title: "Cataract Detection (Computer Vision)",
