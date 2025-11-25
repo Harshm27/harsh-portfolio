@@ -1,8 +1,8 @@
 # Harsh Malhotra - Personal Portfolio
 
-👋 Welcome to my portfolio website! I'm a **Data & AI Engineer** passionate about building intelligent, data-driven systems that turn business questions into measurable impact.
+Welcome to my portfolio website! I'm a **Data & AI Engineer** passionate about building intelligent, data-driven systems that turn business questions into measurable impact.
 
-🌐 **Live Site**: [https://harshm27.github.io/harsh-portfolio/](https://harshm27.github.io/harsh-portfolio/)
+**Live Site**: [https://harshm27.github.io/harsh-portfolio/](https://harshm27.github.io/harsh-portfolio/)
 
 ## About Me
 
@@ -10,10 +10,10 @@ MSc Business Analytics graduate from **Imperial College London** with hands-on e
 
 ### What I Do
 
-- 🤖 **AI & Machine Learning**: Building intelligent systems using CNNs, NLP, LLMs, and RAG
-- 📊 **Data Analytics & Engineering**: Designing robust ETL pipelines and analytics dashboards
-- 💼 **Business Intelligence**: Translating analytics into strategic business outcomes
-- 🏥 **Healthcare AI**: Developing computer vision solutions for clinical applications
+- **AI & Machine Learning**: Building intelligent systems using CNNs, NLP, LLMs, and RAG
+- **Data Analytics & Engineering**: Designing robust ETL pipelines and analytics dashboards
+- **Business Intelligence**: Translating analytics into strategic business outcomes
+- **Healthcare AI**: Developing computer vision solutions for clinical applications
 
 ## Featured Projects
 
@@ -64,19 +64,19 @@ And more - check out my [full portfolio](https://harshm27.github.io/harsh-portfo
 
 I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
 
-- 📧 **Email**: [harshmalhotra1@gmail.com](mailto:harshmalhotra1@gmail.com)
-- 💼 **LinkedIn**: [linkedin.com/in/harshmalhotra27](https://www.linkedin.com/in/harshmalhotra27)
-- 💻 **GitHub**: [github.com/harshm27](https://github.com/harshm27)
+- **Email**: [harshmalhotra1@gmail.com](mailto:harshmalhotra1@gmail.com)
+- **LinkedIn**: [linkedin.com/in/harshmalhotra27](https://www.linkedin.com/in/harshmalhotra27)
+- **GitHub**: [github.com/harshm27](https://github.com/harshm27)
 
 ## Portfolio Website Details
 
 This portfolio is built with:
 
-- ⚡ **Vite** - Next generation frontend tooling
-- ⚛️ **React** - UI library
-- 📘 **TypeScript** - Type safety
-- 🎨 **Tailwind CSS** - Utility-first CSS
-- 🧩 **shadcn/ui** - Beautiful component library
+- **Vite** - Next generation frontend tooling
+- **React** - UI library
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS
+- **shadcn/ui** - Beautiful component library
 
 ### Getting Started Locally
 
@@ -103,6 +103,6 @@ This portfolio is automatically deployed via GitHub Actions to GitHub Pages when
 
 ---
 
-**Open to Data/AI roles and collaborations!** 🚀
+**Open to Data/AI roles and collaborations!**
 
 Feel free to reach out if you'd like to collaborate on an interesting project or just want to chat about data, AI, or technology.
