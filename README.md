@@ -1,74 +1,108 @@
-# Welcome to your Lovable project
+# Harsh Malhotra - Personal Portfolio
 
-## Project info
+👋 Welcome to my portfolio website! I'm a **Data & AI Engineer** passionate about building intelligent, data-driven systems that turn business questions into measurable impact.
 
-**URL**: https://lovable.dev/projects/29b625a4-0c73-4f98-9003-736158ad4e8a
+🌐 **Live Site**: [https://harshm27.github.io/harsh-portfolio/](https://harshm27.github.io/harsh-portfolio/)
 
-## How can I edit this code?
+## About Me
 
-There are several ways of editing your application.
+MSc Business Analytics graduate from **Imperial College London** with hands-on experience building AI and analytics solutions at **PwC** and across industry projects. I specialize in transforming complex data into actionable insights that drive business decisions.
 
-**Use Lovable**
+### What I Do
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/29b625a4-0c73-4f98-9003-736158ad4e8a) and start prompting.
+- 🤖 **AI & Machine Learning**: Building intelligent systems using CNNs, NLP, LLMs, and RAG
+- 📊 **Data Analytics & Engineering**: Designing robust ETL pipelines and analytics dashboards
+- 💼 **Business Intelligence**: Translating analytics into strategic business outcomes
+- 🏥 **Healthcare AI**: Developing computer vision solutions for clinical applications
 
-Changes made via Lovable will be committed automatically to this repo.
+## Featured Projects
 
-**Use your preferred IDE**
+### Logistics Analytics Dashboard
+Full-stack web application for analyzing shipment data with route visualization, rate comparison, and analytics. Built with React, TypeScript, and Node.js.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Live Demo**: [shipment-dashboard-v2.vercel.app](https://shipment-dashboard-v2.vercel.app)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Cataract Detection (Computer Vision)
+Smartphone-based cataract screening tool using CNNs for rapid, accessible clinical diagnosis. Featured in PwC's healthcare innovation network.
 
-Follow these steps:
+**Case Study**: [PwC Healthcare Innovation](https://www.pwc.in/case-studies/using-technology-to-facilitate-access-to-healthcare.html)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Sentiment Analysis of Airbnb Reviews
+NLP-driven sentiment classifier uncovering guest experience patterns and host performance indicators, achieving 85% accuracy on test sets.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+And more - check out my [full portfolio](https://harshm27.github.io/harsh-portfolio/#projects)!
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Tech Stack
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Core Technologies
+- **Languages**: Python, TypeScript, SQL, R, C++
+- **Frontend**: React, TypeScript, Tailwind CSS, shadcn/ui
+- **Backend**: Node.js, Express, RESTful APIs
+- **Data & ML**: Pandas, NumPy, scikit-learn, TensorFlow, XGBoost
+- **Databases**: PostgreSQL, MongoDB
+- **Cloud**: AWS (Certified Cloud Practitioner), GCP, Kubernetes
+- **Tools**: Git, Jira, Confluence, Power BI, Tableau
+
+### Specializations
+- Machine Learning & Deep Learning (CNNs, NLP, LLMs)
+- Data Engineering & ETL Pipelines
+- Computer Vision & Image Processing
+- Generative AI & RAG Systems
+- Analytics & Business Intelligence
+
+## Education
+
+- **MSc Business Analytics**, Imperial College London
+- **B.Tech**, Vellore Institute of Technology
+
+## Experience
+
+- **Data & AI Solutions** at PwC
+- Building analytics and AI systems for healthcare and logistics
+
+## Let's Connect
+
+I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+
+- 📧 **Email**: [harshmalhotra1@gmail.com](mailto:harshmalhotra1@gmail.com)
+- 💼 **LinkedIn**: [linkedin.com/in/harshmalhotra27](https://www.linkedin.com/in/harshmalhotra27)
+- 💻 **GitHub**: [github.com/harshm27](https://github.com/harshm27)
+
+## Portfolio Website Details
+
+This portfolio is built with:
+
+- ⚡ **Vite** - Next generation frontend tooling
+- ⚛️ **React** - UI library
+- 📘 **TypeScript** - Type safety
+- 🎨 **Tailwind CSS** - Utility-first CSS
+- 🧩 **shadcn/ui** - Beautiful component library
+
+### Getting Started Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/Harshm27/harsh-portfolio.git
+
+# Navigate to project directory
+cd harsh-portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+### Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This portfolio is automatically deployed via GitHub Actions to GitHub Pages whenever changes are pushed to the `main` branch.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Open to Data/AI roles and collaborations!** 🚀
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/29b625a4-0c73-4f98-9003-736158ad4e8a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-
+Feel free to reach out if you'd like to collaborate on an interesting project or just want to chat about data, AI, or technology.
