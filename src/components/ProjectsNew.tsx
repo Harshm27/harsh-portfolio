@@ -22,8 +22,8 @@ const featuredProjects: Array<{
     description:
       "Full-stack web application for analyzing shipment data with route visualization, rate comparison, and analytics. Built with React, TypeScript, and Node.js.",
     overview:
-      "Full-stack web application for analyzing shipment data with route visualization, rate comparison, and analytics. Built with React, TypeScript, and Node.js. Features interactive map visualization, real-time shipping rate comparison across major carriers, and comprehensive analytics dashboard for shipment insights.",
-    tech: "React, TypeScript, Node.js, Express, RESTful API, Leaflet.js, Chart.js, data visualization",
+      "A comprehensive logistics management system designed to streamline shipping operations for businesses handling multiple deliveries. Features bulk data processing via Excel import with intelligent format validation, real-time shipping rate comparison across major carriers (DHL, FedEx, UPS, Royal Mail), interactive map visualization with geocoding and marker clustering, analytics dashboard with Chart.js for shipment insights, and support for domestic and international shipping to 30+ countries.",
+    tech: "Vanilla JavaScript, Leaflet.js, Chart.js, SheetJS, Node.js, Express, RESTful API, ParcelMonkey API integration, country-specific validation, E.164 phone formatting",
     results:
       "Enables businesses to analyze shipment data efficiently, compare carrier costs, and optimize logistics operations with visual analytics and route visualization.",
     tech_tags: ["React", "TypeScript", "Node.js", "Full-Stack"],
